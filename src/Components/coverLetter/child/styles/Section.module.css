@@ -150,6 +150,16 @@
     }
   }
 }
+@media (max-width: 480px) {
+  .coverLetterTitle {
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 350px) {
+  .coverLetterTitle {
+    display: none;
+  }
+}
 .coverLetterSection_desc {
   width: 700px;
   height: 780px;
