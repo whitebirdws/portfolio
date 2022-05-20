@@ -1,0 +1,425 @@
+@font-face {
+  font-family: "Pretendard-Bold";
+  src: url("../../../../font/Pretendard-Bold.ttf");
+}
+.sectionContainer {
+  position: relative;
+  display: flex;
+  width: 1920px;
+  height: 880px;
+  margin: 0 auto;
+}
+.sectionContainer input {
+  width: 15px;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.sectionContainer input:hover {
+  color: #9754c3;
+  font-weight: 600;
+}
+.sectionContainer input:focus {
+  outline: none;
+}
+@media (max-width: 1920px) {
+  .sectionContainer {
+    width: 100%;
+  }
+}
+@media (max-width: 1360px) {
+  .sectionContainer {
+    height: 1400px;
+  }
+}
+
+.sectionMenu {
+  width: 300px;
+  border-top: 880px solid #33b1d4;
+
+  border-right: 300px solid transparent;
+}
+@media (max-width: 1360px) {
+  .sectionMenu {
+    display: none;
+  }
+}
+.sectionMenu > span {
+  z-index: 30;
+  position: absolute;
+  width: 300px;
+  transform: translateX(-30%);
+  font-weight: 600;
+  text-shadow: 2px 2px 2px #222;
+}
+.sectionMenu > span:nth-child(1) {
+  top: 200px;
+  left: 200px;
+  color: #67fec4;
+  font-weight: 600;
+  font-size: 4em;
+  animation: ani 2s linear 1;
+}
+@keyframes ani {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+  }
+}
+
+.sectionMenu > span:nth-child(2) {
+  width: 300px;
+  top: 300px;
+  color: #fff;
+  font-size: 3.5em;
+  left: 140px;
+  animation: ani2 2s linear 1;
+}
+@keyframes ani2 {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+  }
+}
+.sectionMenu > span:nth-child(3) {
+  width: 130px;
+  height: 30px;
+  bottom: 360px;
+  font-weight: 1.3em;
+  left: 150px;
+  color: rgb(103, 254, 196);
+  text-align: center;
+  animation: ani3 2s linear 1;
+}
+@keyframes ani3 {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+  }
+}
+
+.sectionMenu > span:nth-child(4) {
+  width: 130px;
+  height: 30px;
+  bottom: 300px;
+  font-weight: 1.3em;
+  left: 130px;
+  color: #fff;
+  text-align: center;
+  animation: ani3 2s linear 1;
+}
+
+.sectionMenu > span > p {
+  margin-left: 40px;
+}
+.instructionSectionMenu {
+  width: 1320px;
+  height: 880px;
+  animation: ani5 2s linear 1;
+}
+@keyframes ani5 {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+  }
+}
+@media (max-width: 1820px) {
+  .instructionSectionMenu {
+    width: 1020px;
+  }
+}
+
+@media (max-width: 1360px) {
+  .instructionSectionMenu {
+    width: 90%;
+    margin: 10px auto 0;
+    border: none;
+    padding-bottom: 200px;
+  }
+  @keyframes ani5 {
+    0% {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    100% {
+    }
+  }
+}
+.instructionSectionMenu_subMenu {
+  display: flex;
+  margin-top: 30px;
+  position: relative;
+}
+@media (max-width: 1360px) {
+  .instructionSectionMenu_subMenu {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.instructionSectionMenu_webSiteBox {
+  margin-left: 110px;
+}
+
+@media (max-width: 1600px) {
+  .instructionSectionMenu_webSiteBox {
+    margin-left: 0;
+    justify-content: center;
+  }
+}
+
+.instructionSectionMenu_webSiteBox > .webSiteBox_button {
+  width: 338px;
+  height: 55px;
+  background-color: #83cade;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+  line-height: 55px;
+  font-weight: 600;
+  font-size: 1.2em;
+  text-align: center;
+}
+.webSiteBox_button:hover {
+  background-color: #46dff3e6;
+}
+
+@media (max-width: 1360px) {
+  .instructionSectionMenu_webSiteBox > .webSiteBox_button {
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 370px) {
+  .instructionSectionMenu_webSiteBox > .webSiteBox_button {
+    width: 100%;
+  }
+}
+.webSiteBox_guidButtonLayout {
+  display: flex;
+  justify-content: center;
+}
+.guideButton_manager {
+  display: inline-block;
+  margin-top: 70px;
+  margin-left: 10px;
+}
+@media (max-width: 1360px) {
+  .guideButton_manager {
+    margin-top: 20px;
+  }
+}
+
+.guideButton_manager:nth-child(1) {
+  margin-left: 110px;
+}
+@media (max-width: 1600px) {
+  .guideButton_manager:nth-child(1) {
+    margin-left: 0;
+  }
+}
+.guideButton_manager > .guideButton {
+  width: 50px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  border: 2px solid #83cade;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  margin-left: 10px;
+}
+.guideButton_manager > .guideButton:hover {
+  background-color: #83cade;
+  color: rgb(255, 255, 255);
+}
+@media (max-width: 1360px) {
+  .guideButton_manager > .guideButton {
+    width: 30px;
+    height: 50px;
+    line-height: 50px;
+  }
+}
+
+.instructionSectionMenu_webSiteBoxImage > .webSiteBox_imageBox {
+  width: 490px;
+  height: 250px;
+  background-color: #ccc;
+  border-radius: 30px;
+  margin-left: 80px;
+}
+@media (max-width: 1600px) {
+  .instructionSectionMenu_webSiteBoxImage > .webSiteBox_imageBox {
+    width: 460px;
+    margin-left: 30px;
+    margin-top: 0px;
+  }
+}
+@media (max-width: 1360px) {
+  .instructionSectionMenu_webSiteBoxImage > .webSiteBox_imageBox {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .instructionSectionMenu_webSiteBoxImage > .webSiteBox_imageBox {
+    margin-left: 0;
+    width: 350px;
+  }
+}
+@media (max-width: 370px) {
+  .instructionSectionMenu_webSiteBoxImage > .webSiteBox_imageBox {
+    width: 280px;
+    height: 150px;
+  }
+}
+.instructionSectionMenu_projectBox {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 110px;
+}
+@media (max-width: 1600px) {
+  .instructionSectionMenu_projectBox {
+    margin-left: 0;
+  }
+}
+
+.instructionSectionMenu_projectBox > .projectBox_button {
+  width: 338px;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.2em;
+  background-color: #8a81ede6;
+  border-radius: 30px;
+  color: #fff;
+}
+
+.instructionSectionMenu_projectBox > .projectBox_button:nth-child(1) {
+  background-color: #83cade;
+}
+@media (max-width: 1360px) {
+  .instructionSectionMenu_projectBox > .projectBox_button {
+    font-size: 0.8em;
+  }
+  .instructionSectionMenu_projectBox > .projectBox_button:nth-child(1) {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .instructionSectionMenu_projectBox > .projectBox_button:nth-child(1) {
+    display: none;
+  }
+}
+.instructionSectionMenu_projectBox > .projectBox_button:nth-child(2) {
+  margin-left: 150px;
+  background-color: #83cade;
+}
+.instructionSectionMenu_projectBox > .projectBox_button:nth-child(2):hover {
+  background-color: #46dff3e6;
+}
+@media (max-width: 1360px) {
+  .instructionSectionMenu_projectBox > .projectBox_button:nth-child(2) {
+    margin: 0 auto;
+  }
+}
+
+.instructionSectionMenu_projectBox > .projectBox_descBox {
+  width: 910px;
+  height: 470px;
+
+  border: 2px solid #83cade;
+  border-radius: 30px;
+  box-sizing: border-box;
+  padding-top: 30px;
+  padding-left: 10px;
+  color: rgb(255, 255, 255);
+  font-family: "Pretendard-Bold";
+}
+@media (max-width: 1600px) {
+  .instructionSectionMenu_projectBox > .projectBox_descBox {
+    width: 830px;
+  }
+}
+@media (max-width: 1360px) {
+  .instructionSectionMenu_projectBox > .projectBox_descBox {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #f9f9f9e6;
+    border-radius: 0;
+  }
+}
+.projectBox_descBox > span:nth-child(1) {
+  width: 300px;
+  height: 30px;
+  padding: 5px;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: #83cade;
+  color: #fff;
+}
+.projectBox_descBox > span:nth-child(2) {
+  margin-left: 10px;
+  width: 300px;
+  height: 30px;
+}
+
+.projectBox_descBox > span:nth-child(7) {
+  width: 300px;
+  height: 30px;
+  background-color: #83cade;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 5px;
+}
+.projectBox_descBox > span:nth-child(8) {
+  width: 300px;
+  height: 30px;
+
+  font-size: 1em;
+  padding-left: 5px;
+}
+.projectBox_descBox > span:nth-child(15) {
+  width: 300px;
+  height: 30px;
+  background-color: #83cade;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 5px;
+}
+.projectBox_descBox > span:nth-child(16) {
+  width: 300px;
+  height: 30px;
+  margin-left: 10px;
+
+  border: 2px solid #83cade;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 5px;
+}
+.projectBox_descBox > span:nth-child(16):hover {
+  background-color: #83cade;
+  color: #fff;
+}
+@media (max-width: 1360px) {
+  .projectBox_descBox {
+    font-size: 0.8em;
+  }
+}
