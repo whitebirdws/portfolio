@@ -68,96 +68,165 @@ $height: 20px;
   margin: 0px auto;
   position: relative;
   transform-style: preserve-3d;
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
 }
 
 .box1 {
   @include aniform(100px, 8s);
   @include boxList(#ee82ee, 100px);
+  @media (max-width: 1200px) {
+    @include boxList(#ee82ee, 10%);
+  }
 }
 
 .box2 {
   @include aniform2(0px, 9s);
   @include boxList(#e88336, 100px);
+  @media (max-width: 1200px) {
+    @include boxList(#ee82ee, 10%);
+  }
 }
 .box3 {
   @include aniform(0px, 8s);
   @include boxList(#f4e923, 200px);
+  @media (max-width: 1200px) {
+    @include boxList(#f4e923, 20%);
+  }
 }
 .box4 {
   @include aniform2(0px, 5s);
   @include boxList(#2349f4, 300px);
+  @media (max-width: 1200px) {
+    @include boxList(#2349f4, 30%);
+  }
 }
 .box5 {
   @include aniform(0px, 7s);
   @include boxList(#96a6ed, 400px);
+  @media (max-width: 1200px) {
+    @include boxList(#96a6ed, 40%);
+  }
 }
 .box6 {
   @include aniform2(0px, 8s);
   @include boxList(#f1be57, 500px);
+  @media (max-width: 1200px) {
+    @include boxList(#f1be57, 50%);
+  }
 }
 .box7 {
   @include aniform(0px, 9s);
   @include boxList(#c1f461, 600px);
+  @media (max-width: 1200px) {
+    @include boxList(#c1f461, 60%);
+  }
 }
 .box8 {
   @include aniform2(0px, 8s);
   @include boxList(#f461d9, 700px);
+  @media (max-width: 1200px) {
+    @include boxList(#f461d9, 70%);
+  }
 }
 .box9 {
   @include aniform(0px, 7s);
   @include boxList(#f46181, 800px);
+  @media (max-width: 1200px) {
+    @include boxList(#f46181, 80%);
+  }
 }
 .box10 {
   @include aniform2(0px, 7s);
   @include boxList(#6168f4, 900px);
+  @media (max-width: 1200px) {
+    @include boxList(#6168f4, 90%);
+  }
 }
 .box11 {
   @include aniform(0px, 7s);
   @include boxList(#b3f140, 1000px);
+  @media (max-width: 1200px) {
+    @include boxList(#b3f140, 95%);
+  }
 }
 .box12 {
   @include aniform2(0px, 7s);
   @include boxList(#59cae4, 1100px);
+  @media (max-width: 1200px) {
+    @include boxList2(#59cae4, 98%);
+  }
 }
 .box13 {
   @include aniform(0px, 10s);
   @include boxList2(#e45969, 150px);
+  @media (max-width: 1200px) {
+    @include boxList2(#e45969, 15%);
+  }
 }
 .box14 {
   @include aniform2(0px, 6s);
   @include boxList2(#9d92f5, 250px);
+  @media (max-width: 1200px) {
+    @include boxList2(#9d92f5, 25%);
+  }
 }
 .box15 {
   @include aniform(0px, 9s);
   @include boxList2(#92eef5, 350px);
+  @media (max-width: 1200px) {
+    @include boxList2(#92eef5, 35%);
+  }
 }
 .box16 {
   @include aniform2(0px, 9s);
   @include boxList2(#92eef5, 450px);
+  @media (max-width: 1200px) {
+    @include boxList2(#92eef5, 45%);
+  }
 }
 .box17 {
   @include aniform(0px, 5s);
   @include boxList2(#3dba37, 550px);
+  @media (max-width: 1200px) {
+    @include boxList2(#3dba37, 55%);
+  }
 }
 .box18 {
   @include aniform2(0px, 6s);
   @include boxList2(#d45731, 650px);
+  @media (max-width: 1200px) {
+    @include boxList(#d45731, 65%);
+  }
 }
 .box19 {
   @include aniform(0px, 6s);
   @include boxList2(#d45731, 750px);
+  @media (max-width: 1200px) {
+    @include boxList2(#d45731, 75%);
+  }
 }
 .box20 {
   @include aniform2(0px, 6s);
   @include boxList2(#82d431, 850px);
+  @media (max-width: 1200px) {
+    @include boxList2(#82d431, 85%);
+  }
 }
 .box21 {
   @include aniform(0px, 6s);
   @include boxList2(#f3f56e, 950px);
+  @media (max-width: 1200px) {
+    @include boxList2(#f3f56e, 95%);
+  }
 }
 .box22 {
   @include aniform2(0px, 6s);
   @include boxList2(#82d431, 1050px);
+  @media (max-width: 1200px) {
+    @include boxList2(#f3f56e, 98%);
+  }
 }
 .tsbox {
   position: relative;
@@ -188,6 +257,9 @@ $height: 20px;
     &:hover {
       color: #ffef5e;
     }
+  }
+  @media (max-width: 1200px) {
+    width: 90%;
   }
 }
 #canvas {
