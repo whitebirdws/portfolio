@@ -1,0 +1,198 @@
+$width: 20px;
+$height: 20px;
+.coverBody {
+  background: linear-gradient(135deg, #78e2ec 10%, #66b6fc 80%);
+}
+@mixin boxList($backgroundColor, $left) {
+  position: absolute;
+  width: $width;
+  height: $height;
+  background-color: $backgroundColor;
+  font-size: 2em;
+  left: $left;
+  opacity: 0.8;
+  text-align: center;
+}
+@mixin boxList2($backgroundColor, $left) {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: $backgroundColor;
+  font-size: 2em;
+  left: $left;
+  opacity: 0.8;
+  text-align: center;
+}
+@mixin aniform($topValue-primary, $timer) {
+  animation-name: ani;
+  animation-duration: $timer;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-style: preserve-3d;
+
+  @keyframes ani {
+    0% {
+      transform: rotate(0deg);
+      top: $topValue-primary;
+    }
+
+    100% {
+      transform: rotate(360deg);
+      top: 700px;
+    }
+  }
+}
+@mixin aniform2($topValue-primary, $timer) {
+  animation-name: ani2;
+  animation-duration: $timer;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-style: preserve-3d;
+
+  @keyframes ani2 {
+    0% {
+      transform: rotate(360deg);
+      top: 600px;
+    }
+
+    100% {
+      transform: rotate(0deg);
+      top: $topValue-primary;
+    }
+  }
+}
+
+.manager {
+  width: 1200px;
+  height: 935px;
+  margin: 0px auto;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.box1 {
+  @include aniform(100px, 8s);
+  @include boxList(#ee82ee, 100px);
+}
+
+.box2 {
+  @include aniform2(0px, 9s);
+  @include boxList(#e88336, 100px);
+}
+.box3 {
+  @include aniform(0px, 8s);
+  @include boxList(#f4e923, 200px);
+}
+.box4 {
+  @include aniform2(0px, 5s);
+  @include boxList(#2349f4, 300px);
+}
+.box5 {
+  @include aniform(0px, 7s);
+  @include boxList(#96a6ed, 400px);
+}
+.box6 {
+  @include aniform2(0px, 8s);
+  @include boxList(#f1be57, 500px);
+}
+.box7 {
+  @include aniform(0px, 9s);
+  @include boxList(#c1f461, 600px);
+}
+.box8 {
+  @include aniform2(0px, 8s);
+  @include boxList(#f461d9, 700px);
+}
+.box9 {
+  @include aniform(0px, 7s);
+  @include boxList(#f46181, 800px);
+}
+.box10 {
+  @include aniform2(0px, 7s);
+  @include boxList(#6168f4, 900px);
+}
+.box11 {
+  @include aniform(0px, 7s);
+  @include boxList(#b3f140, 1000px);
+}
+.box12 {
+  @include aniform2(0px, 7s);
+  @include boxList(#59cae4, 1100px);
+}
+.box13 {
+  @include aniform(0px, 10s);
+  @include boxList2(#e45969, 150px);
+}
+.box14 {
+  @include aniform2(0px, 6s);
+  @include boxList2(#9d92f5, 250px);
+}
+.box15 {
+  @include aniform(0px, 9s);
+  @include boxList2(#92eef5, 350px);
+}
+.box16 {
+  @include aniform2(0px, 9s);
+  @include boxList2(#92eef5, 450px);
+}
+.box17 {
+  @include aniform(0px, 5s);
+  @include boxList2(#3dba37, 550px);
+}
+.box18 {
+  @include aniform2(0px, 6s);
+  @include boxList2(#d45731, 650px);
+}
+.box19 {
+  @include aniform(0px, 6s);
+  @include boxList2(#d45731, 750px);
+}
+.box20 {
+  @include aniform2(0px, 6s);
+  @include boxList2(#82d431, 850px);
+}
+.box21 {
+  @include aniform(0px, 6s);
+  @include boxList2(#f3f56e, 950px);
+}
+.box22 {
+  @include aniform2(0px, 6s);
+  @include boxList2(#82d431, 1050px);
+}
+.tsbox {
+  position: relative;
+  z-index: 100;
+
+  width: 500px;
+  height: 200px;
+
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 0px 20px rgb(200, 245, 217);
+  color: rgb(129, 128, 128);
+  font-size: 2em;
+  font-style: italic;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%);
+  top: 300px;
+
+  div {
+    width: 200px;
+    margin: 80px auto 0;
+    background-color: #1b72b5;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+      color: #ffef5e;
+    }
+  }
+}
+#canvas {
+  position: absolute;
+  left: 120px;
+  cursor: pointer;
+  color: #1b72b5;
+}

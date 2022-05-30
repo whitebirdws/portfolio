@@ -6,7 +6,7 @@
 .sectionContainer {
   position: relative;
   display: flex;
-
+  background-color: #33b1d4;
   width: 1920px;
   height: 880px;
   margin: 0 auto;
@@ -24,9 +24,9 @@
 }
 
 .sectionMenu {
-  width: 300px;
-  border-top: 880px solid #33b1d4;
-  border-right: 300px solid transparent;
+  width: 150px;
+  border-top: 880px solid #5fcae5;
+  border-right: 500px solid transparent;
 }
 @media (max-width: 1600px) {
   .sectionMenu {
@@ -107,9 +107,9 @@
   margin-left: 40px;
 }
 .coverLetterSection {
-  /* margin-top: 50px; */
   width: 1200px;
   height: 600px;
+
   animation: ani5 2s linear 1;
 }
 @keyframes ani5 {
@@ -161,23 +161,21 @@
   }
 }
 .coverLetterSection_desc {
-  width: 700px;
+  width: 800px;
   height: 780px;
-  background-color: rgb(55, 179, 179);
-  overflow-y: scroll;
-  margin: 0 auto;
-  word-spacing: 2px;
-  line-height: 2;
-
-  margin-top: 50px;
-  padding: 10px;
-  font-size: 1.1em;
-  letter-spacing: 2px;
   color: #ffffff;
+  margin-top: 50px;
+  font-size: 1.1em;
+  line-height: 2;
+  letter-spacing: 2px;
   font-family: "Pretendard-Medium";
+  margin-left: 10px;
+  overflow-y: scroll;
+  padding: 10px;
+  word-spacing: 2px;
 }
 .coverLetterSection_desc::-webkit-scrollbar {
-  background-color: rgb(55, 179, 179);
+  background-color: #e0e9f6;
 }
 .coverLetterSection_desc::-webkit-scrollbar-button {
   background-color: rgb(248, 248, 248);
@@ -185,10 +183,13 @@
 .coverLetterSection_desc::-webkit-scrollbar-thumb {
   background-color: rgb(253, 253, 253);
 }
-@media (max-width: 1600px) {
+
+@media (max-width: 1610px) {
   .coverLetterSection {
-    width: 100%;
+    margin: 0 auto;
   }
+}
+@media (max-width: 1600px) {
   .coverLetterSection_desc {
     width: 90%;
     color: #ffffff;
